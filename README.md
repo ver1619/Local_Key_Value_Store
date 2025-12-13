@@ -83,6 +83,8 @@ EXIT
 
 **Terminal Output:**
 
+<img width="400" height="473" alt="terminal" src="https://github.com/user-attachments/assets/6caf5a62-c521-4851-b009-fdd3695bf5a2" />
+
 ---
 
 **Atmoic Snapshot (JSON):**
