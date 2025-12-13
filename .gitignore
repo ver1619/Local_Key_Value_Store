@@ -1,0 +1,12 @@
+# runtime data
+data.json
+data.wal
+data/
+
+# binaries
+kvmain
+kvserver
+
+# Go build artifacts
+*.exe
+*.out
