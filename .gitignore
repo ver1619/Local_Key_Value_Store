@@ -1,34 +1,11 @@
-############################
-# Runtime / persistent data
-############################
+# runtime data
+data.json
+data.wal
 data/
-*.wal
-*.json
 
-############################
-# Build outputs / binaries
-############################
+# binaries
 bin/
-kvmain*
-kvserver*
 
-############################
 # Go build artifacts
-############################
 *.exe
-*.exe~
 *.out
-*.test
-*.prof
-
-############################
-# Go tooling cache (optional)
-############################
-/dist/
-
-############################
-# Editor / OS files
-############################
-.vscode/
-.idea/
-.DS_Store
