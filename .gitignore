@@ -4,8 +4,8 @@ data.wal
 data/
 
 # binaries
-kvmain
-kvserver
+kvmain*
+kvserver*
 
 # Go build artifacts
 *.exe
