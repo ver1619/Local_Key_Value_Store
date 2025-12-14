@@ -7,6 +7,9 @@ This project is inspired by systems like Redis and LSM-tree-based databases like
 
 **NOTE : Create directtory named data/ in the root directory before running the program**
 
+**Requirements**
+- Install go 1.22+
+
 **Features:**
 - In-memory key–value index (map[string]string)
 
