@@ -49,7 +49,7 @@ go run ./cmd/kvmain
 ```bash
 go run ./cmd/kvserver
 ```
-**The serer listens on:**
+**The server listens on:**
 
 `localhost:4000`
 
@@ -92,7 +92,7 @@ EXIT
 
 ---
 
-**Atmoic Snapshot (JSON):**
+**Atomic Snapshot (JSON):**
 
 ```json
 {
