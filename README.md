@@ -1,11 +1,30 @@
 # Local Key-Value Store 
 
-A crash-safe, concurrent key-value store written in GO that demonstrates core database and storage-engine internals such as write-ahead logging (WAL), atomic persistence, crash recovery, secondary indexing, and a TCP server.<br>
-This project is inspired by systems like Redis and LSM-tree-based databases like LevelDB and RocksDB, designed as a learning and demonstration project.
+A crash-safe, concurrent key-value store written in GO that demonstrates core database and storage-engine internals such as write-ahead logging (WAL), atomic persistence, crash recovery, secondary indexing.<br>
+This project is inspired by basic concepts used in systems like Redis and LSM-tree-based databases, designed as a learning and demonstration project.
 
 ---
 
+```
+## Project Structure
+
+cmd/
+  kvmain/      # CLI (single client)
+  kvserver/    # TCP server (multi-client)
+internal/kv/   # Core storage engine (Store, WAL, Snapshot)
+data/          # Runtime data (snapshot + WAL)
+```
+**CLI vs TCP Server**
+
+- CLI mode is for single-user, local interaction.
+- TCP server mode allows multiple clients to connect concurrently over the network.
+- Both modes use the same storage engine, WAL, and snapshot logic.
+
+
 **NOTE : Create a directory named data/ in the root directory before running the program**
+- WAL grows until a snapshot (SAVE) is taken.
+- In CLI mode, SAVE resets the WAL.
+- In TCP server mode, WAL compaction is not implemented.
 
 **Requirements**
 - Install go 1.22+
