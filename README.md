@@ -1,4 +1,4 @@
-# Local Key-Value Store 
+# Local Key-Value Store v1
 
 A crash-safe, concurrent key-value store written in GO that demonstrates core database and storage-engine internals such as write-ahead logging (WAL), atomic persistence, crash recovery, secondary indexing.<br>
 This project is inspired by basic concepts used in systems like Redis and LSM-tree-based databases, designed as a learning and demonstration project.
