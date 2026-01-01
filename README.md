@@ -1,6 +1,6 @@
 # Local Key-Value Store v1
 
-A crash-safe, concurrent key-value store written in GO that demonstrates core database and storage-engine internals such as write-ahead logging (WAL), atomic persistence, crash recovery, secondary indexing.<br>
+A crash-safe, concurrent key-value store written in GO that demonstrates core database and storage-engine internals such as write-ahead logging (WAL), atomic persistence, crash recovery.<br>
 This project is inspired by basic concepts used in systems like Redis and LSM-tree-based databases, designed as a learning and demonstration project.
 
 ---
@@ -96,9 +96,9 @@ EXIT
 **Example:**
 
 ```bash
-PUT user:1 Joe
-GET user:1
-DELETE user:1
+PUT user:Joe
+GET user
+DELETE user
 SAVE
 EXIT
 ```
