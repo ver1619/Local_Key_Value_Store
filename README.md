@@ -38,8 +38,6 @@ data/          # Runtime data (snapshot + WAL)
 
 - Crash-safe recovery on restart
 
-- Secondary index for prefix scans
-
 - Interactive CLI
 
 - Concurrent TCP server
