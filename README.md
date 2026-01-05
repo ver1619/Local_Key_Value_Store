@@ -5,9 +5,8 @@ This project is inspired by basic concepts used in systems like Redis and LSM-tr
 
 ---
 
+**Project Structure**
 ```
-## Project Structure
-
 cmd/
   kvmain/      # CLI (single client)
   kvserver/    # TCP server (multi-client)
